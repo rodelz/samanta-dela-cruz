@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <!-- Profile Picture -->
+        <img src="profile.jpg" alt="Profile Picture" class="profile-picture">
+        
+        <!-- Bio Text -->
+        <h2>MA. SAMANTA DELA CRUZ</h2>
+        <p class="bio">Know Anything About Me!!</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <button onclick="toggleSection('addressSection')">My Address</button>
+        <button onclick="toggleSection('gallerySection')">Favorite Pictures</button>
+        <button onclick="toggleSection('moviesSection')">Favorite Movies</button>
+        <button onclick="togglePopup()">Social Media Account</button>
+    </nav>
+
+    <!-- Address Section -->
+    <section id="addressSection" class="hidden">
+        <h2>My Address</h2>
+        <p>Dulangan, Pilar, Capiz</p>
+    </section>
+
+    <!-- Favorite Pictures Gallery -->
+    <section id="gallerySection" class="hidden">
+        <h2>Favorite Pictures</h2>
+        <div class="gallery">
+            <img src="profile.jpg" alt="Favorite Picture 1">
+            <img src="profile.jpg" alt="Favorite Picture 2">
+            <img src="profile.jpg" alt="Favorite Picture 3">
+        </div>
+    </section>
+
+    <!-- Favorite Movies Gallery -->
+    <section id="moviesSection" class="hidden">
+        <h2>Favorite Movies</h2>
+        <div class="gallery">
+            <img src="profile.jpg" alt="Favorite Movie 1">
+            <img src="profile.jpg" alt="Favorite Movie 2">
+            <img src="profile.jpg" alt="Favorite Movie 3">
+        </div>
+    </section>
+
+    <!-- Social Media Popup -->
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <span class="close" onclick="togglePopup()">&times;</span>
+            <h3>Social Media Platform</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/masamanta.delacruz" target="_blank">FACEBOOK</a></li>
+                <li><a href="https://www.instagram.com/sammyy_dela_cruz/profilecard/?igsh=MWE2aXV6amU3a2ppdQ==" target="_blank">INSTAGRAM</a></li>
+                
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
